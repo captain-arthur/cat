@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <testsuite name="ClusterLoaderV2" tests="0" failures="2" errors="0" time="10.05">
+      <testcase name="simple-pod-test overall (simple-test-v3.yaml)" classname="ClusterLoaderV2" time="10.046190167">
+          <failure type="Failure">:0&#xA;[reading template () for identifier error: reading error: read .: is a directory]&#xA;:0</failure>
+      </testcase>
+      <testcase name="simple-pod-test: [step: 01] create-pods" classname="ClusterLoaderV2" time="0.000231666">
+          <failure type="Failure">:0&#xA;[reading template () for identifier error: reading error: read .: is a directory]&#xA;:0</failure>
+      </testcase>
+  </testsuite>

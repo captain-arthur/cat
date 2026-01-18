@@ -1,0 +1,44 @@
+name: simple-pod-test
+dependencies: []
+automanagednamespaces: 0
+namespace:
+  number: 5
+  prefix: cl2-test
+  deletestalenamespaces: false
+  deleteautomanagednamespaces: true
+  enableexistingnamespaces: false
+  deletenamespacetimeout: 600000000000
+steps:
+- phases:
+  - namespacerange:
+      min: 1
+      max: 5
+      basename: null
+    namespacelist: []
+    replicaspernamespace: 10
+    tuningset: default
+    objectbundle:
+    - basename: test-pod
+      objecttemplatepath: ""
+      templatefillmap: {}
+      listunknownobjectoptions: null
+  measurements: []
+  module:
+    path: ""
+    params: {}
+  name: create-pods
+tuningsets:
+- name: default
+  initialdelay: 0
+  qpsload:
+    qps: 5
+  randomizedload: null
+  steppedload: null
+  timelimitedload: null
+  randomizedtimelimitedload: null
+  parallelismlimitedload: null
+  globalqpsload: null
+  poissonload: null
+chaosmonkey:
+  nodefailure: null
+  excludednodes: {}

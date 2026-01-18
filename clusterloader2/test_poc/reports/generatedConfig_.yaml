@@ -1,0 +1,15 @@
+name: ""
+dependencies: []
+automanagednamespaces: 0
+namespace:
+  number: 1
+  prefix: test-1jx5se
+  deletestalenamespaces: false
+  deleteautomanagednamespaces: true
+  enableexistingnamespaces: false
+  deletenamespacetimeout: 600000000000
+steps: []
+tuningsets: []
+chaosmonkey:
+  nodefailure: null
+  excludednodes: {}
