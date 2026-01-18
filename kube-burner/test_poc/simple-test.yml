@@ -1,0 +1,21 @@
+jobs:
+- name: simple-pod-test
+  namespace: kube-burner-test
+  jobIterations: 10
+  objects:
+  - replicas: 1
+    objectTemplate: |
+      apiVersion: v1
+      kind: Pod
+      metadata:
+        name: test-pod-{{ .JobIteration }}
+        labels:
+          app: kube-burner-test
+      spec:
+        containers:
+        - name: pause
+          image: registry.k8s.io/pause:3.9
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi

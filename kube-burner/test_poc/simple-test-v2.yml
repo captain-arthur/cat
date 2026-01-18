@@ -1,0 +1,7 @@
+jobs:
+- name: simple-pod-test
+  namespace: kube-burner-test
+  jobIterations: 10
+  objects:
+  - objectTemplate: pod-template.yml
+    replicas: 1

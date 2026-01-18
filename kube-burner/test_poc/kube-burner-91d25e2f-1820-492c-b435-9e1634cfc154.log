@@ -1,0 +1,3 @@
+time="2026-01-18 18:30:01" level=warning msg="simple-pod-test: Invalid QPS (0); using default: 5" file="job.go:358"
+time="2026-01-18 18:30:01" level=warning msg="simple-pod-test: Invalid Burst (0); using default: 10" file="job.go:365"
+time="2026-01-18 18:30:01" level=info msg="Deleting 10 namespaces with label: kube-burner.io/job=simple-pod-test" file="namespaces.go:65"

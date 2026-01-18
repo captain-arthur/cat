@@ -1,0 +1,7 @@
+jobs:
+- name: cluster-density
+  namespace: kube-burner-density
+  jobIterations: 5
+  objects:
+  - objectTemplate: pod-template-official.yml
+    replicas: 10
