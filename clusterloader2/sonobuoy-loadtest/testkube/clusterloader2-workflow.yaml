@@ -1,0 +1,21 @@
+apiVersion: testworkflows.testkube.io/v1
+kind: TestWorkflow
+metadata:
+  name: clusterloader2-test
+  namespace: testkube
+spec:
+  container:
+    image: ttl.sh/clusterloader2-sonobuoy-test:24h
+    resources:
+      requests:
+        cpu: 100m
+        memory: 256Mi
+  steps:
+    - name: Run ClusterLoader2 Performance Test
+      shell: |
+        /usr/local/bin/clusterloader2 \
+          --run-from-cluster=true \
+          --provider=skeleton \
+          --testconfig=/config/config.yaml \
+          --report-dir=/data/artifacts \
+          --v=2

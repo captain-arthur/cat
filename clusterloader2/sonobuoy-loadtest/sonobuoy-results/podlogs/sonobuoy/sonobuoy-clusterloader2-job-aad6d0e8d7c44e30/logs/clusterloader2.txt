@@ -1,0 +1,39 @@
+I0201 12:23:26.736869       7 dns_performance-k8s-hostnames.go:58] Registering measurement: DNS Performance for K8s Hostnames
+I0201 12:23:26.737033       7 network_performance_measurement.go:90] Registering Network Performance Measurement
+I0201 12:23:26.738201       7 clusterloader.go:272] Listening on 8000
+I0201 12:23:26.752706       7 clusterloader.go:168] ClusterConfig.Nodes set to 1
+I0201 12:23:26.754886       7 clusterloader.go:174] ClusterConfig.MasterName set to docker-desktop
+E0201 12:23:26.756609       7 clusterloader.go:185] Getting master external ip error: didn't find any ExternalIP master IPs
+I0201 12:23:26.758657       7 clusterloader.go:192] ClusterConfig.MasterInternalIP set to [192.168.65.3]
+I0201 12:23:26.758674       7 clusterloader.go:300] Using config: {ClusterConfig:{KubeConfigPath: RunFromCluster:true Nodes:1 Provider:0x40001483a0 EtcdCertificatePath:/etc/srv/kubernetes/pki/etcd-apiserver-server.crt EtcdKeyPath:/etc/srv/kubernetes/pki/etcd-apiserver-server.key EtcdInsecurePort:2382 MasterIPs:[] MasterInternalIPs:[192.168.65.3] MasterName:docker-desktop DeleteStaleNamespaces:false DeleteAutomanagedNamespaces:true APIServerPprofByClientEnabled:true KubeletPort:10250 K8SClientsNumber:1 SkipClusterVerification:false} ReportDir:/tmp/sonobuoy/results ExecServiceConfig:{Enable:true ImageRegistry:registry.k8s.io} ModifierConfig:{OverwriteTestConfig:[] SkipSteps:[]} PrometheusConfig:{TearDownServer:true EnableServer:false EnablePushgateway:false ScrapeEtcd:false ScrapeNodeExporter:false ScrapeWindowsNodeExporter:false ScrapeKubelets:false ScrapeMasterKubelets:false ScrapeKubeProxy:true KubeProxySelectorKey:component ScrapeKubeStateMetrics:false ScrapeMetricsServerMetrics:false ScrapeNodeLocalDNS:false ScrapeAnet:false ScrapeNetworkPolicies:false ScrapeMastersWithPublicIPs:false APIServerScrapePort:443 SnapshotProject: AdditionalMonitorsPath: StorageClassProvisioner:kubernetes.io/gce-pd StorageClassVolumeType:pd-ssd PVCStorageClass:ssd ReadyTimeout:15m0s PrometheusMemoryRequest:10Gi} OverridePaths:[]}
+I0201 12:23:26.762375       7 framework.go:74] Creating framework with 1 clients and "" kubeconfig.
+I0201 12:23:26.777220       7 framework.go:276] Applying templates for "manifest/exec_deployment.yaml"
+W0201 12:23:36.845533       7 imagepreload.go:93] No images specified. Skipping image preloading
+I0201 12:23:36.848330       7 clusterloader.go:454] Test config successfully dumped to: /tmp/sonobuoy/results/generatedConfig_test.yaml
+I0201 12:23:36.848351       7 clusterloader.go:243] --------------------------------------------------------------------------------
+I0201 12:23:36.848355       7 clusterloader.go:244] Running /config/config.yaml
+I0201 12:23:36.848358       7 clusterloader.go:245] --------------------------------------------------------------------------------
+I0201 12:23:36.862345       7 shared_informer.go:349] "Waiting for caches to sync" controller="PodsIndexer"
+I0201 12:23:36.964193       7 shared_informer.go:356] "Caches are synced" controller="PodsIndexer"
+I0201 12:23:43.093408       7 phase_latency.go:146] PodStartupLatency: perc50: 107.445ms, perc90: 115.62ms, perc99: 119.742ms
+I0201 12:23:43.093439       7 phase_latency.go:146] PodStartupLatency: perc50: 892.459ms, perc90: 906.904ms, perc99: 910.975ms
+I0201 12:23:43.093448       7 phase_latency.go:146] PodStartupLatency: perc50: 1.875973416s, perc90: 2.023802458s, perc99: 2.045263083s
+I0201 12:23:43.093458       7 phase_latency.go:146] PodStartupLatency: perc50: 2.782877416s, perc90: 2.916140458s, perc99: 2.941659083s
+I0201 12:23:43.093464       7 phase_latency.go:146] PodStartupLatency: perc50: 2.875973416s, perc90: 3.023802458s, perc99: 3.045263083s; threshold 20s
+I0201 12:23:43.093602       7 phase_latency.go:146] PodStartupLatency: perc50: 2.875973416s, perc90: 3.023802458s, perc99: 3.045263083s; threshold 20s
+I0201 12:23:43.093619       7 phase_latency.go:146] PodStartupLatency: perc50: 107.445ms, perc90: 115.62ms, perc99: 119.742ms
+I0201 12:23:43.093626       7 phase_latency.go:146] PodStartupLatency: perc50: 892.459ms, perc90: 906.904ms, perc99: 910.975ms
+I0201 12:23:43.093631       7 phase_latency.go:146] PodStartupLatency: perc50: 1.875973416s, perc90: 2.023802458s, perc99: 2.045263083s
+I0201 12:23:43.093638       7 phase_latency.go:146] PodStartupLatency: perc50: 2.782877416s, perc90: 2.916140458s, perc99: 2.941659083s
+I0201 12:23:43.093671       7 phase_latency.go:146] PodStartupLatency: perc50: 0s, perc90: 0s, perc99: 0s
+I0201 12:23:43.093676       7 phase_latency.go:146] PodStartupLatency: perc50: 0s, perc90: 0s, perc99: 0s
+I0201 12:23:43.093681       7 phase_latency.go:146] PodStartupLatency: perc50: 0s, perc90: 0s, perc99: 0s
+I0201 12:23:43.093691       7 phase_latency.go:146] PodStartupLatency: perc50: 0s, perc90: 0s, perc99: 0s
+I0201 12:23:43.093696       7 phase_latency.go:146] PodStartupLatency: perc50: 0s, perc90: 0s, perc99: 0s; threshold 20s
+I0201 12:23:58.103566       7 clusterloader.go:253] --------------------------------------------------------------------------------
+I0201 12:23:58.103592       7 clusterloader.go:254] Test Finished
+I0201 12:23:58.103596       7 clusterloader.go:255]   Test: /config/config.yaml
+I0201 12:23:58.103598       7 clusterloader.go:256]   Status: Success
+I0201 12:23:58.103601       7 clusterloader.go:260] --------------------------------------------------------------------------------
+
+JUnit report was created: /tmp/sonobuoy/results/junit.xml

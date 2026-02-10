@@ -1,0 +1,26 @@
+name: clusterloader2
+status: passed
+meta:
+  type: summary
+items:
+- name: junit.xml
+  status: passed
+  meta:
+    file: results/global/junit.xml
+    type: file
+  items:
+  - name: ClusterLoaderV2
+    status: passed
+    items:
+    - name: test overall (/config/config.yaml)
+      status: passed
+    - name: 'test: [step: 01] Start measurements [00] - PodStartupLatency'
+      status: passed
+    - name: 'test: [step: 01] Start measurements [01] - WaitForControlledPodsRunning'
+      status: passed
+    - name: 'test: [step: 02] Create deployment'
+      status: passed
+    - name: 'test: [step: 03] Wait for pods to be running [00] - WaitForControlledPodsRunning'
+      status: passed
+    - name: 'test: [step: 04] Measure pod startup latency [00] - PodStartupLatency'
+      status: passed

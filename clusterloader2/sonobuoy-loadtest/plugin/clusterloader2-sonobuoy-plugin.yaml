@@ -1,0 +1,20 @@
+# Sonobuoy 커스텀 플러그인: ClusterLoader2 부하 테스트
+# - Job 1회 실행, junit 결과로 Sonobuoy가 요약·리포트 생성
+# 사용: sonobuoy run --plugin plugin/clusterloader2-sonobuoy-plugin.yaml --wait
+sonobuoy-config:
+  driver: Job
+  plugin-name: clusterloader2
+  result-format: junit
+spec:
+  name: clusterloader2
+  image: clusterloader2-sonobuoy:latest
+  imagePullPolicy: IfNotPresent
+  command: ["/bin/sh", "-c"]
+  args:
+    - |
+      /usr/local/bin/clusterloader2 \
+        --run-from-cluster=true \
+        --provider=skeleton \
+        --testconfig=/config/config.yaml \
+        --report-dir=${SONOBUOY_RESULTS_DIR} && \
+      echo ${SONOBUOY_RESULTS_DIR}/junit.xml > ${SONOBUOY_RESULTS_DIR}/done

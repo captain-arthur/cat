@@ -1,0 +1,54 @@
+# Sonobuoy 통합용 간단 부하 테스트 설정
+# - 네임스페이스 2개, 각 5개 Pod (총 10개)
+# - PodStartupLatency 측정
+
+name: simple-load-test
+
+tuningSets:
+- name: Uniform100ms
+  qpsLoad:
+    qps: 10
+
+namespace:
+  number: 2
+  prefix: loadtest-ns
+  deleteStaleNamespaces: true
+  deleteAutomanagedNamespaces: true
+
+steps:
+- name: Start measurements
+  measurements:
+  - Identifier: PodStartupLatency
+    Method: PodStartupLatency
+    Params:
+      action: start
+      labelSelector: app = load-pod
+
+- name: Create pods
+  phases:
+  - namespaceRange:
+      min: 1
+      max: 2
+    replicasPerNamespace: 5
+    tuningSet: Uniform100ms
+    objectBundle:
+    - basename: load-pod
+      objectTemplatePath: /config/pod-template.yaml
+
+- name: Wait for pods running
+  measurements:
+  - Identifier: WaitForPods
+    Method: WaitForControlledPodsRunning
+    Params:
+      action: gather
+      apiVersion: v1
+      kind: Pod
+      labelSelector: app = load-pod
+      operationTimeout: 120s
+
+- name: Gather measurements
+  measurements:
+  - Identifier: PodStartupLatency
+    Method: PodStartupLatency
+    Params:
+      action: gather

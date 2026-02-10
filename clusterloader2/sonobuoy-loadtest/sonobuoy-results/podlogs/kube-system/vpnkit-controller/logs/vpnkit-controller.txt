@@ -1,0 +1,6 @@
+2026/02/01 11:28:24 Starting kube-vpnkit-forwarder...
+W0201 11:28:54.919970       1 reflector.go:533] github.com/moby/vpnkit/go/cmd/kube-vpnkit-forwarder/main.go:49: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout
+I0201 11:28:54.921581       1 trace.go:219] Trace[1298498081]: "Reflector ListAndWatch" name:github.com/moby/vpnkit/go/cmd/kube-vpnkit-forwarder/main.go:49 (01-Feb-2026 11:28:24.879) (total time: 30040ms):
+Trace[1298498081]: ---"Objects listed" error:Get "https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout 30038ms (11:28:54.919)
+Trace[1298498081]: [30.040193139s] [30.040193139s] END
+E0201 11:28:54.921617       1 reflector.go:148] github.com/moby/vpnkit/go/cmd/kube-vpnkit-forwarder/main.go:49: Failed to watch *v1.Service: failed to list *v1.Service: Get "https://10.96.0.1:443/api/v1/services?limit=500&resourceVersion=0": dial tcp 10.96.0.1:443: i/o timeout

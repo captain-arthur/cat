@@ -1,0 +1,503 @@
+W0201 11:28:20.920831       1 registry.go:256] calling componentGlobalsRegistry.AddFlags more than once, the registry will be set by the latest flags
+I0201 11:28:20.923044       1 options.go:238] external host was not specified, using 192.168.65.3
+I0201 11:28:20.924955       1 server.go:143] Version: v1.32.2
+I0201 11:28:20.924995       1 server.go:145] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0201 11:28:21.377423       1 shared_informer.go:313] Waiting for caches to sync for node_authorizer
+I0201 11:28:21.383819       1 shared_informer.go:313] Waiting for caches to sync for *generic.policySource[*k8s.io/api/admissionregistration/v1.ValidatingAdmissionPolicy,*k8s.io/api/admissionregistration/v1.ValidatingAdmissionPolicyBinding,k8s.io/apiserver/pkg/admission/plugin/policy/validating.Validator]
+I0201 11:28:21.388760       1 plugins.go:157] Loaded 13 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionPolicy,MutatingAdmissionWebhook.
+I0201 11:28:21.388778       1 plugins.go:160] Loaded 13 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,ClusterTrustBundleAttest,CertificateSubjectRestriction,ValidatingAdmissionPolicy,ValidatingAdmissionWebhook,ResourceQuota.
+I0201 11:28:21.389541       1 instance.go:233] Using reconciler: lease
+I0201 11:28:22.066021       1 handler.go:286] Adding GroupVersion apiextensions.k8s.io v1 to ResourceManager
+W0201 11:28:22.066039       1 genericapiserver.go:767] Skipping API apiextensions.k8s.io/v1beta1 because it has no resources.
+I0201 11:28:22.171268       1 handler.go:286] Adding GroupVersion  v1 to ResourceManager
+I0201 11:28:22.171437       1 apis.go:106] API group "internal.apiserver.k8s.io" is not enabled, skipping.
+I0201 11:28:22.278088       1 apis.go:106] API group "storagemigration.k8s.io" is not enabled, skipping.
+I0201 11:28:22.336102       1 apis.go:106] API group "resource.k8s.io" is not enabled, skipping.
+I0201 11:28:22.346503       1 handler.go:286] Adding GroupVersion authentication.k8s.io v1 to ResourceManager
+W0201 11:28:22.346519       1 genericapiserver.go:767] Skipping API authentication.k8s.io/v1beta1 because it has no resources.
+W0201 11:28:22.346524       1 genericapiserver.go:767] Skipping API authentication.k8s.io/v1alpha1 because it has no resources.
+I0201 11:28:22.346778       1 handler.go:286] Adding GroupVersion authorization.k8s.io v1 to ResourceManager
+W0201 11:28:22.346787       1 genericapiserver.go:767] Skipping API authorization.k8s.io/v1beta1 because it has no resources.
+I0201 11:28:22.347271       1 handler.go:286] Adding GroupVersion autoscaling v2 to ResourceManager
+I0201 11:28:22.347637       1 handler.go:286] Adding GroupVersion autoscaling v1 to ResourceManager
+W0201 11:28:22.347647       1 genericapiserver.go:767] Skipping API autoscaling/v2beta1 because it has no resources.
+W0201 11:28:22.347649       1 genericapiserver.go:767] Skipping API autoscaling/v2beta2 because it has no resources.
+I0201 11:28:22.348356       1 handler.go:286] Adding GroupVersion batch v1 to ResourceManager
+W0201 11:28:22.348367       1 genericapiserver.go:767] Skipping API batch/v1beta1 because it has no resources.
+I0201 11:28:22.348866       1 handler.go:286] Adding GroupVersion certificates.k8s.io v1 to ResourceManager
+W0201 11:28:22.348877       1 genericapiserver.go:767] Skipping API certificates.k8s.io/v1beta1 because it has no resources.
+W0201 11:28:22.348879       1 genericapiserver.go:767] Skipping API certificates.k8s.io/v1alpha1 because it has no resources.
+I0201 11:28:22.349246       1 handler.go:286] Adding GroupVersion coordination.k8s.io v1 to ResourceManager
+W0201 11:28:22.349256       1 genericapiserver.go:767] Skipping API coordination.k8s.io/v1beta1 because it has no resources.
+W0201 11:28:22.349259       1 genericapiserver.go:767] Skipping API coordination.k8s.io/v1alpha2 because it has no resources.
+I0201 11:28:22.349644       1 handler.go:286] Adding GroupVersion discovery.k8s.io v1 to ResourceManager
+W0201 11:28:22.349656       1 genericapiserver.go:767] Skipping API discovery.k8s.io/v1beta1 because it has no resources.
+I0201 11:28:22.350508       1 handler.go:286] Adding GroupVersion networking.k8s.io v1 to ResourceManager
+W0201 11:28:22.350519       1 genericapiserver.go:767] Skipping API networking.k8s.io/v1beta1 because it has no resources.
+W0201 11:28:22.350522       1 genericapiserver.go:767] Skipping API networking.k8s.io/v1alpha1 because it has no resources.
+I0201 11:28:22.350839       1 handler.go:286] Adding GroupVersion node.k8s.io v1 to ResourceManager
+W0201 11:28:22.350848       1 genericapiserver.go:767] Skipping API node.k8s.io/v1beta1 because it has no resources.
+W0201 11:28:22.350850       1 genericapiserver.go:767] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+I0201 11:28:22.351210       1 handler.go:286] Adding GroupVersion policy v1 to ResourceManager
+W0201 11:28:22.351218       1 genericapiserver.go:767] Skipping API policy/v1beta1 because it has no resources.
+I0201 11:28:22.352047       1 handler.go:286] Adding GroupVersion rbac.authorization.k8s.io v1 to ResourceManager
+W0201 11:28:22.352056       1 genericapiserver.go:767] Skipping API rbac.authorization.k8s.io/v1beta1 because it has no resources.
+W0201 11:28:22.352059       1 genericapiserver.go:767] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+I0201 11:28:22.352298       1 handler.go:286] Adding GroupVersion scheduling.k8s.io v1 to ResourceManager
+W0201 11:28:22.352307       1 genericapiserver.go:767] Skipping API scheduling.k8s.io/v1beta1 because it has no resources.
+W0201 11:28:22.352310       1 genericapiserver.go:767] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+I0201 11:28:22.353565       1 handler.go:286] Adding GroupVersion storage.k8s.io v1 to ResourceManager
+W0201 11:28:22.353575       1 genericapiserver.go:767] Skipping API storage.k8s.io/v1beta1 because it has no resources.
+W0201 11:28:22.353577       1 genericapiserver.go:767] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+I0201 11:28:22.354367       1 handler.go:286] Adding GroupVersion flowcontrol.apiserver.k8s.io v1 to ResourceManager
+W0201 11:28:22.354377       1 genericapiserver.go:767] Skipping API flowcontrol.apiserver.k8s.io/v1beta3 because it has no resources.
+W0201 11:28:22.354379       1 genericapiserver.go:767] Skipping API flowcontrol.apiserver.k8s.io/v1beta2 because it has no resources.
+W0201 11:28:22.354381       1 genericapiserver.go:767] Skipping API flowcontrol.apiserver.k8s.io/v1beta1 because it has no resources.
+I0201 11:28:22.357141       1 handler.go:286] Adding GroupVersion apps v1 to ResourceManager
+W0201 11:28:22.357151       1 genericapiserver.go:767] Skipping API apps/v1beta2 because it has no resources.
+W0201 11:28:22.357154       1 genericapiserver.go:767] Skipping API apps/v1beta1 because it has no resources.
+I0201 11:28:22.358078       1 handler.go:286] Adding GroupVersion admissionregistration.k8s.io v1 to ResourceManager
+W0201 11:28:22.358088       1 genericapiserver.go:767] Skipping API admissionregistration.k8s.io/v1beta1 because it has no resources.
+W0201 11:28:22.358091       1 genericapiserver.go:767] Skipping API admissionregistration.k8s.io/v1alpha1 because it has no resources.
+I0201 11:28:22.358385       1 handler.go:286] Adding GroupVersion events.k8s.io v1 to ResourceManager
+W0201 11:28:22.358396       1 genericapiserver.go:767] Skipping API events.k8s.io/v1beta1 because it has no resources.
+I0201 11:28:22.365429       1 handler.go:286] Adding GroupVersion apiregistration.k8s.io v1 to ResourceManager
+W0201 11:28:22.365447       1 genericapiserver.go:767] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+I0201 11:28:22.615581       1 secure_serving.go:213] Serving securely on [::]:6443
+I0201 11:28:22.615820       1 controller.go:78] Starting OpenAPI AggregationController
+I0201 11:28:22.615874       1 system_namespaces_controller.go:66] Starting system namespaces controller
+I0201 11:28:22.615902       1 apf_controller.go:377] Starting API Priority and Fairness config controller
+I0201 11:28:22.616043       1 dynamic_cafile_content.go:161] "Starting controller" name="request-header::/run/config/pki/front-proxy-ca.crt"
+I0201 11:28:22.616153       1 dynamic_cafile_content.go:161] "Starting controller" name="client-ca-bundle::/run/config/pki/ca.crt"
+I0201 11:28:22.616533       1 gc_controller.go:78] Starting apiserver lease garbage collector
+I0201 11:28:22.617087       1 dynamic_serving_content.go:135] "Starting controller" name="aggregator-proxy-cert::/run/config/pki/front-proxy-client.crt::/run/config/pki/front-proxy-client.key"
+I0201 11:28:22.621625       1 local_available_controller.go:156] Starting LocalAvailability controller
+I0201 11:28:22.621641       1 cache.go:32] Waiting for caches to sync for LocalAvailability controller
+I0201 11:28:22.621666       1 controller.go:80] Starting OpenAPI V3 AggregationController
+I0201 11:28:22.621666       1 cluster_authentication_trust_controller.go:462] Starting cluster_authentication_trust_controller controller
+I0201 11:28:22.621709       1 shared_informer.go:313] Waiting for caches to sync for cluster_authentication_trust_controller
+I0201 11:28:22.621856       1 dynamic_serving_content.go:135] "Starting controller" name="serving-cert::/run/config/pki/apiserver.crt::/run/config/pki/apiserver.key"
+I0201 11:28:22.621964       1 tlsconfig.go:243] "Starting DynamicServingCertificateController"
+I0201 11:28:22.622115       1 aggregator.go:169] waiting for initial CRD sync...
+I0201 11:28:22.622713       1 crdregistration_controller.go:114] Starting crd-autoregister controller
+I0201 11:28:22.622728       1 shared_informer.go:313] Waiting for caches to sync for crd-autoregister
+I0201 11:28:22.622718       1 customresource_discovery_controller.go:292] Starting DiscoveryController
+I0201 11:28:22.622770       1 remote_available_controller.go:411] Starting RemoteAvailability controller
+I0201 11:28:22.622786       1 cache.go:32] Waiting for caches to sync for RemoteAvailability controller
+I0201 11:28:22.622806       1 apiservice_controller.go:100] Starting APIServiceRegistrationController
+I0201 11:28:22.622813       1 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+I0201 11:28:22.622900       1 controller.go:119] Starting legacy_token_tracking_controller
+I0201 11:28:22.623041       1 shared_informer.go:313] Waiting for caches to sync for configmaps
+I0201 11:28:22.623149       1 dynamic_cafile_content.go:161] "Starting controller" name="client-ca-bundle::/run/config/pki/ca.crt"
+I0201 11:28:22.623295       1 dynamic_cafile_content.go:161] "Starting controller" name="request-header::/run/config/pki/front-proxy-ca.crt"
+I0201 11:28:22.624176       1 apiapproval_controller.go:189] Starting KubernetesAPIApprovalPolicyConformantConditionController
+I0201 11:28:22.624475       1 controller.go:142] Starting OpenAPI controller
+I0201 11:28:22.624487       1 controller.go:90] Starting OpenAPI V3 controller
+I0201 11:28:22.624507       1 crd_finalizer.go:269] Starting CRDFinalizer
+I0201 11:28:22.624514       1 establishing_controller.go:81] Starting EstablishingController
+I0201 11:28:22.624546       1 nonstructuralschema_controller.go:195] Starting NonStructuralSchemaConditionController
+I0201 11:28:22.624507       1 naming_controller.go:294] Starting NamingConditionController
+I0201 11:28:22.677985       1 shared_informer.go:320] Caches are synced for node_authorizer
+I0201 11:28:22.684700       1 shared_informer.go:320] Caches are synced for *generic.policySource[*k8s.io/api/admissionregistration/v1.ValidatingAdmissionPolicy,*k8s.io/api/admissionregistration/v1.ValidatingAdmissionPolicyBinding,k8s.io/apiserver/pkg/admission/plugin/policy/validating.Validator]
+I0201 11:28:22.684736       1 policy_source.go:240] refreshing policies
+I0201 11:28:22.716834       1 apf_controller.go:382] Running API Priority and Fairness config worker
+I0201 11:28:22.716846       1 apf_controller.go:385] Running API Priority and Fairness periodic rebalancing process
+E0201 11:28:22.719724       1 controller.go:97] Error removing old endpoints from kubernetes service: no API server IP addresses were listed in storage, refusing to erase all endpoints for the kubernetes Service
+I0201 11:28:22.722926       1 cache.go:39] Caches are synced for LocalAvailability controller
+I0201 11:28:22.722952       1 cache.go:39] Caches are synced for RemoteAvailability controller
+I0201 11:28:22.723001       1 shared_informer.go:320] Caches are synced for crd-autoregister
+I0201 11:28:22.723029       1 aggregator.go:171] initial CRD sync complete...
+I0201 11:28:22.723037       1 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+I0201 11:28:22.723040       1 shared_informer.go:320] Caches are synced for cluster_authentication_trust_controller
+I0201 11:28:22.723039       1 autoregister_controller.go:144] Starting autoregister controller
+I0201 11:28:22.723857       1 cache.go:32] Waiting for caches to sync for autoregister controller
+I0201 11:28:22.723860       1 cache.go:39] Caches are synced for autoregister controller
+I0201 11:28:22.723993       1 shared_informer.go:320] Caches are synced for configmaps
+I0201 11:28:22.727380       1 handler_discovery.go:451] Starting ResourceDiscoveryManager
+I0201 11:28:22.744960       1 controller.go:615] quota admission added evaluator for: leases.coordination.k8s.io
+E0201 11:28:22.755805       1 controller.go:195] "Failed to update lease" err="Operation cannot be fulfilled on leases.coordination.k8s.io \"apiserver-457xdkumpkdqmkwikdt6khrbya\": StorageError: invalid object, Code: 4, Key: /registry/leases/kube-system/apiserver-457xdkumpkdqmkwikdt6khrbya, ResourceVersion: 0, AdditionalErrorMsg: Precondition failed: UID in precondition: 32cbce42-67dc-4c3d-b4ba-6207fece1201, UID in object meta: "
+I0201 11:28:23.626248       1 storage_scheduling.go:111] all system priority classes are created successfully or already exist.
+I0201 11:28:23.755029       1 controller.go:615] quota admission added evaluator for: serviceaccounts
+I0201 11:28:25.787519       1 controller.go:615] quota admission added evaluator for: endpointslices.discovery.k8s.io
+I0201 11:28:26.037011       1 controller.go:615] quota admission added evaluator for: endpoints
+I0201 11:28:26.186963       1 controller.go:615] quota admission added evaluator for: replicasets.apps
+I0201 11:28:26.288590       1 controller.go:615] quota admission added evaluator for: deployments.apps
+W0201 11:38:39.746643       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:39:18.674260       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:39:20.700127       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:39:24.750060       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:39:49.451091       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:39:55.737320       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:40:07.796090       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:40:08.806840       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:40:09.715648       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:40:18.728549       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:40:50.252880       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:40:58.772741       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:41:01.402469       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:41:13.344196       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:41:23.777119       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:41:29.753936       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:41:35.734156       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:41:55.171547       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:03.795115       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:04.702604       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:05.710745       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:07.736714       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:10.770435       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:14.015994       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:15.739375       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:15.739401       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:16.752762       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:23.738168       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:27.382078       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:30.723176       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:31.751622       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:38.840539       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:41.791630       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:42.703882       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:43.820318       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:50.713899       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:57.825445       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:42:58.736750       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:05.738743       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:07.763022       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:07.763025       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:16.691797       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:17.801359       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:21.752672       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:26.809650       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:31.782800       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:43.758276       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:44.162778       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:50.777164       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:57.793481       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:59.714924       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:43:59.714924       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:00.839202       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:01.749955       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:05.693882       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:05.795400       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:07.722517       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:07.823163       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:09.745548       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:14.300799       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:20.809788       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:26.587904       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:28.711906       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:44.199572       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:52.404131       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:52.705697       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:44:53.719684       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:00.703577       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:06.688300       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:13.768684       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:21.756734       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:24.800694       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:37.685173       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:38.796829       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:40.735224       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:41.742518       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:42.756238       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:48.819941       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:51.748490       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:53.792595       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:56.797624       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:45:59.914303       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:12.819186       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:17.738533       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:23.680965       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:31.795421       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:38.762691       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:38.763191       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:42.846563       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:44.697430       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:45.828977       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:46:59.716685       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:47:09.767311       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:47:11.718889       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:47:12.223016       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:47:17.803059       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:48:37.641974       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:48:43.713236       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:48:48.274765       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:48:53.345763       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:48:59.733357       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:49:10.667054       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:49:25.965183       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:49:27.283954       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:49:31.029406       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:49:37.808710       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:49:45.723335       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:49:48.456437       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:01.229468       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:16.338833       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:17.856917       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:19.684889       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:20.090148       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:22.816210       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:25.251751       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:35.988506       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:44.006807       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:50:46.749425       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+I0201 11:51:04.642596       1 controller.go:615] quota admission added evaluator for: namespaces
+I0201 11:51:04.668377       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.103.105.28"}
+W0201 11:51:33.722304       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:51:40.309499       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:52:01.828666       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:52:02.032746       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:52:20.667661       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:52:30.192502       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:52:52.197446       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:09.427616       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+I0201 11:53:19.512874       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.104.231.160"}
+W0201 11:53:22.129168       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:24.971791       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:34.803684       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:36.232476       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:38.359705       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:42.216254       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:42.821402       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:44.241916       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:47.382568       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:54.364941       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:53:58.234716       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:54:05.028275       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:54:20.257006       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+I0201 11:54:20.385277       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.108.14.245"}
+W0201 11:54:25.916297       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:54:31.296020       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:54:33.119961       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:54:46.406638       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:54:48.928611       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:54:55.611618       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:07.163659       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:10.624021       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:14.259932       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:24.568212       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:30.044353       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:31.263605       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:32.984722       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:38.162767       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:47.782000       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:49.804043       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:55:50.721268       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:56:25.891541       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:56:31.475717       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:56:33.397819       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:56:33.707044       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:56:47.928972       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:56:54.838387       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:56:56.259646       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:57:30.364694       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:57:30.871759       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+E0201 11:57:41.621566       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 11:57:46.627674       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 11:57:51.626206       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 11:57:56.628126       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 11:58:01.619238       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+I0201 11:58:13.731883       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.107.196.204"}
+W0201 11:58:23.608104       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:58:26.858784       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:58:50.996682       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:58:57.689493       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:59:15.245070       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:59:23.156412       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:59:29.440067       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:59:32.075193       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:59:33.793837       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:59:36.640563       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:59:37.349805       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 11:59:40.399731       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:00:06.586265       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:00:41.254935       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:00:48.774719       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:00:53.875533       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:01:06.397786       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:01:20.228494       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:01:23.670549       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:01:49.496664       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:02:49.576239       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:02.165302       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:30.485516       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:31.595966       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:33.733446       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:33.936097       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:37.886487       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:40.420805       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:43.168594       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:49.975389       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:03:57.504712       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:10.536840       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:10.839312       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:13.177600       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:28.616279       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:34.414092       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:34.722277       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:37.987363       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:39.100250       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:44.800636       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:51.023427       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:04:52.237158       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:05:07.187291       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:05:12.281240       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:05:12.687674       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:05:14.919855       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:05:22.558301       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:05:32.211383       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:05:38.696428       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:05:44.899373       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:05:52.232916       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:11.696837       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:16.371266       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:17.582942       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:25.787865       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:27.304281       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:30.447782       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:34.407296       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:35.424246       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:44.246788       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:06:46.890070       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:03.238825       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:03.544895       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:03.644543       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:07.409471       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:07.923137       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:19.804157       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:22.245463       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:22.853684       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:25.091660       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:30.176828       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:31.898577       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:33.217939       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:40.239086       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:53.850694       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:56.494863       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:07:58.536580       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:05.128815       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:12.877016       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:13.296239       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:13.296233       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:18.784802       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:23.867779       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:29.551942       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:34.322238       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:52.221133       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:52.827873       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:57.206733       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:08:58.021224       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:09:00.462846       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:09:04.522162       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+I0201 12:09:09.385615       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.97.82.226"}
+W0201 12:09:13.845267       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:09:15.373791       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:09:15.981801       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:09:19.936025       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:09:22.060519       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:09:32.696571       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+I0201 12:10:12.726442       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.111.25.10"}
+W0201 12:10:12.938533       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:10:14.663811       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:10:39.503287       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:11:28.317740       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:11:32.064289       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+I0201 12:11:32.172090       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.105.139.124"}
+W0201 12:11:41.982414       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:11:42.691571       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:11:45.718619       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:11:52.104433       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:12:25.096590       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:12:35.951453       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:12:49.046961       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+I0201 12:12:54.655442       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.101.200.169"}
+W0201 12:13:05.779652       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:13:17.069359       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:13:36.073421       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:13:47.637854       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:13:50.592897       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:13:56.275747       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:13:57.895504       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:13:58.404109       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:13:59.320070       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:14:03.806714       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:14:18.339287       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:14:21.282714       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:14:21.685861       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:14:25.134084       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:14:34.461504       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:14:48.542462       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:14:55.236428       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:15:05.575595       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:15:07.599440       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:15:21.529482       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:15:54.766169       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:16:26.638423       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:16:30.286279       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:16:39.719826       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:16:41.145388       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:16:54.737374       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:16:59.911985       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:17:16.746847       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:17:27.185575       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:17:33.484878       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:17:45.049161       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:17:48.894972       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:17:56.802721       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+E0201 12:18:10.972910       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 12:18:15.977104       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+W0201 12:18:19.285714       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+E0201 12:18:20.974738       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 12:18:25.976349       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+W0201 12:18:27.900834       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+E0201 12:18:30.977539       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+W0201 12:18:34.377284       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+E0201 12:18:35.990688       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+W0201 12:18:37.817702       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+E0201 12:18:40.978155       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+W0201 12:18:43.402447       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:18:43.705709       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+E0201 12:18:45.975889       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 12:18:50.975204       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+W0201 12:18:54.670657       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+E0201 12:18:55.972621       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+W0201 12:19:02.886894       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:19:16.581335       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+I0201 12:19:25.563730       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.98.200.63"}
+W0201 12:19:27.036922       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:19:28.357569       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:19:28.358073       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:19:44.989075       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:19:53.546422       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:19:58.530601       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:20:09.292880       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:20:13.668596       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:20:20.477420       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:20:31.045336       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:20:59.304098       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:21:11.485587       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:21:17.381583       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:21:52.427690       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:21:55.068128       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:21:58.109107       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:22:05.100420       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:22:09.569863       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:22:13.124297       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:22:17.915939       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:22:30.327652       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+E0201 12:22:51.899060       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 12:22:56.907135       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 12:23:01.904950       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 12:23:06.903750       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 12:23:11.901168       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+E0201 12:23:16.902233       1 authentication.go:74] "Unable to authenticate the request" err="[invalid bearer token, serviceaccounts \"sonobuoy-serviceaccount\" not found]"
+W0201 12:23:22.479895       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+I0201 12:23:25.266006       1 alloc.go:330] "allocated clusterIPs" service="sonobuoy/sonobuoy-aggregator" clusterIPs={"IPv4":"10.102.246.249"}
+W0201 12:23:25.330863       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:23:41.177829       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:23:48.895911       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:23:51.247482       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:23:55.511201       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:23:55.714304       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:24:03.028590       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:24:06.697062       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted
+W0201 12:24:16.236586       1 watcher.go:338] watch chan error: etcdserver: mvcc: required revision has been compacted

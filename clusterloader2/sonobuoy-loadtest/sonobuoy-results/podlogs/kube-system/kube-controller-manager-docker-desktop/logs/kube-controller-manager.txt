@@ -1,0 +1,362 @@
+I0201 11:28:21.287965       1 serving.go:386] Generated self-signed cert in-memory
+I0201 11:28:21.527028       1 controllermanager.go:185] "Starting" version="v1.32.2"
+I0201 11:28:21.527046       1 controllermanager.go:187] "Golang settings" GOGC="" GOMAXPROCS="" GOTRACEBACK=""
+I0201 11:28:21.529313       1 secure_serving.go:213] Serving securely on 127.0.0.1:10257
+I0201 11:28:21.530167       1 tlsconfig.go:243] "Starting DynamicServingCertificateController"
+I0201 11:28:21.530175       1 dynamic_cafile_content.go:161] "Starting controller" name="request-header::/run/config/pki/front-proxy-ca.crt"
+I0201 11:28:21.530182       1 dynamic_cafile_content.go:161] "Starting controller" name="client-ca-bundle::/run/config/pki/ca.crt"
+I0201 11:28:24.649230       1 controllermanager.go:765] "Started controller" controller="serviceaccount-token-controller"
+I0201 11:28:24.649256       1 controllermanager.go:723] "Skipping a cloud provider controller" controller="service-lb-controller"
+I0201 11:28:24.649261       1 controllermanager.go:723] "Skipping a cloud provider controller" controller="cloud-node-lifecycle-controller"
+I0201 11:28:24.650166       1 shared_informer.go:313] Waiting for caches to sync for tokens
+I0201 11:28:24.678465       1 controllermanager.go:765] "Started controller" controller="ephemeral-volume-controller"
+I0201 11:28:24.681166       1 controller.go:173] "Starting ephemeral volume controller" logger="ephemeral-volume-controller"
+I0201 11:28:24.681259       1 shared_informer.go:313] Waiting for caches to sync for ephemeral
+I0201 11:28:24.740762       1 controllermanager.go:765] "Started controller" controller="validatingadmissionpolicy-status-controller"
+I0201 11:28:24.740892       1 shared_informer.go:313] Waiting for caches to sync for validatingadmissionpolicy-status
+I0201 11:28:24.746796       1 controllermanager.go:765] "Started controller" controller="endpoints-controller"
+I0201 11:28:24.754110       1 shared_informer.go:320] Caches are synced for tokens
+I0201 11:28:24.754125       1 endpoints_controller.go:182] "Starting endpoint controller" logger="endpoints-controller"
+I0201 11:28:24.754260       1 shared_informer.go:313] Waiting for caches to sync for endpoint
+I0201 11:28:24.763239       1 controllermanager.go:765] "Started controller" controller="cronjob-controller"
+I0201 11:28:24.763407       1 cronjob_controllerv2.go:145] "Starting cronjob controller v2" logger="cronjob-controller"
+I0201 11:28:24.763417       1 shared_informer.go:313] Waiting for caches to sync for cronjob
+I0201 11:28:24.800862       1 controllermanager.go:765] "Started controller" controller="namespace-controller"
+I0201 11:28:24.801014       1 namespace_controller.go:202] "Starting namespace controller" logger="namespace-controller"
+I0201 11:28:24.802992       1 shared_informer.go:313] Waiting for caches to sync for namespace
+I0201 11:28:24.803825       1 controllermanager.go:765] "Started controller" controller="certificatesigningrequest-approving-controller"
+I0201 11:28:24.804380       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-approving-controller" name="csrapproving"
+I0201 11:28:24.804399       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrapproving
+I0201 11:28:24.806826       1 controllermanager.go:765] "Started controller" controller="certificatesigningrequest-cleaner-controller"
+I0201 11:28:24.806978       1 cleaner.go:83] "Starting CSR cleaner controller" logger="certificatesigningrequest-cleaner-controller"
+I0201 11:28:24.810342       1 controllermanager.go:765] "Started controller" controller="ttl-controller"
+I0201 11:28:24.810467       1 ttl_controller.go:127] "Starting TTL controller" logger="ttl-controller"
+I0201 11:28:24.810480       1 shared_informer.go:313] Waiting for caches to sync for TTL
+I0201 11:28:24.811858       1 controllermanager.go:765] "Started controller" controller="token-cleaner-controller"
+I0201 11:28:24.812740       1 tokencleaner.go:117] "Starting token cleaner controller" logger="token-cleaner-controller"
+I0201 11:28:24.812754       1 shared_informer.go:313] Waiting for caches to sync for token_cleaner
+I0201 11:28:24.812760       1 shared_informer.go:320] Caches are synced for token_cleaner
+I0201 11:28:24.814374       1 controllermanager.go:765] "Started controller" controller="clusterrole-aggregation-controller"
+I0201 11:28:24.814526       1 clusterroleaggregation_controller.go:194] "Starting ClusterRoleAggregator controller" logger="clusterrole-aggregation-controller"
+I0201 11:28:24.814539       1 shared_informer.go:313] Waiting for caches to sync for ClusterRoleAggregator
+I0201 11:28:24.816820       1 controllermanager.go:765] "Started controller" controller="pod-garbage-collector-controller"
+I0201 11:28:24.817609       1 gc_controller.go:99] "Starting GC controller" logger="pod-garbage-collector-controller"
+I0201 11:28:24.817627       1 shared_informer.go:313] Waiting for caches to sync for GC
+I0201 11:28:24.835397       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="podtemplates"
+I0201 11:28:24.835440       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="cronjobs.batch"
+I0201 11:28:24.837119       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="poddisruptionbudgets.policy"
+I0201 11:28:24.837148       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="endpoints"
+I0201 11:28:24.837156       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="jobs.batch"
+I0201 11:28:24.837224       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="daemonsets.apps"
+I0201 11:28:24.837275       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="replicasets.apps"
+I0201 11:28:24.837446       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="csistoragecapacities.storage.k8s.io"
+I0201 11:28:24.837518       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="ingresses.networking.k8s.io"
+I0201 11:28:24.837536       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="rolebindings.rbac.authorization.k8s.io"
+W0201 11:28:24.837561       1 shared_informer.go:597] resyncPeriod 13h49m17.503042395s is smaller than resyncCheckPeriod 21h24m17.322078712s and the informer has already started. Changing it to 21h24m17.322078712s
+I0201 11:28:24.837599       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="deployments.apps"
+I0201 11:28:24.837634       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="horizontalpodautoscalers.autoscaling"
+I0201 11:28:24.837646       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="networkpolicies.networking.k8s.io"
+I0201 11:28:24.837655       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="leases.coordination.k8s.io"
+W0201 11:28:24.837661       1 shared_informer.go:597] resyncPeriod 12h6m54.426209435s is smaller than resyncCheckPeriod 21h24m17.322078712s and the informer has already started. Changing it to 21h24m17.322078712s
+I0201 11:28:24.837703       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="serviceaccounts"
+I0201 11:28:24.837727       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="controllerrevisions.apps"
+I0201 11:28:24.837737       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="endpointslices.discovery.k8s.io"
+I0201 11:28:24.837764       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="limitranges"
+I0201 11:28:24.837773       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="statefulsets.apps"
+I0201 11:28:24.837783       1 resource_quota_monitor.go:227] "QuotaMonitor created object count evaluator" logger="resourcequota-controller" resource="roles.rbac.authorization.k8s.io"
+I0201 11:28:24.837801       1 controllermanager.go:765] "Started controller" controller="resourcequota-controller"
+I0201 11:28:24.839533       1 resource_quota_controller.go:300] "Starting resource quota controller" logger="resourcequota-controller"
+I0201 11:28:24.839573       1 shared_informer.go:313] Waiting for caches to sync for resource quota
+I0201 11:28:24.839624       1 resource_quota_monitor.go:308] "QuotaMonitor running" logger="resourcequota-controller"
+I0201 11:28:24.842461       1 controllermanager.go:765] "Started controller" controller="taint-eviction-controller"
+I0201 11:28:24.842561       1 taint_eviction.go:281] "Starting" logger="taint-eviction-controller" controller="taint-eviction-controller"
+I0201 11:28:24.842581       1 taint_eviction.go:287] "Sending events to api server" logger="taint-eviction-controller"
+I0201 11:28:24.842594       1 shared_informer.go:313] Waiting for caches to sync for taint-eviction-controller
+I0201 11:28:24.845214       1 controllermanager.go:765] "Started controller" controller="persistentvolume-protection-controller"
+I0201 11:28:24.845240       1 controllermanager.go:717] "Controller is disabled by a feature gate" controller="kube-apiserver-serving-clustertrustbundle-publisher-controller" requiredFeatureGates=["ClusterTrustBundle"]
+I0201 11:28:24.845986       1 pv_protection_controller.go:81] "Starting PV protection controller" logger="persistentvolume-protection-controller"
+I0201 11:28:24.846025       1 shared_informer.go:313] Waiting for caches to sync for PV protection
+I0201 11:28:24.850184       1 controllermanager.go:765] "Started controller" controller="persistentvolume-attach-detach-controller"
+I0201 11:28:24.850508       1 attach_detach_controller.go:338] "Starting attach detach controller" logger="persistentvolume-attach-detach-controller"
+I0201 11:28:24.850522       1 shared_informer.go:313] Waiting for caches to sync for attach detach
+I0201 11:28:24.852042       1 controllermanager.go:765] "Started controller" controller="persistentvolumeclaim-protection-controller"
+I0201 11:28:24.852202       1 controllermanager.go:717] "Controller is disabled by a feature gate" controller="service-cidr-controller" requiredFeatureGates=["MultiCIDRServiceAllocator"]
+I0201 11:28:24.852109       1 pvc_protection_controller.go:168] "Starting PVC protection controller" logger="persistentvolumeclaim-protection-controller"
+I0201 11:28:24.852234       1 shared_informer.go:313] Waiting for caches to sync for PVC protection
+I0201 11:28:24.852219       1 controllermanager.go:717] "Controller is disabled by a feature gate" controller="selinux-warning-controller" requiredFeatureGates=["SELinuxChangePolicy"]
+I0201 11:28:24.855951       1 controllermanager.go:765] "Started controller" controller="deployment-controller"
+I0201 11:28:24.855967       1 controllermanager.go:723] "Skipping a cloud provider controller" controller="node-route-controller"
+I0201 11:28:24.856145       1 deployment_controller.go:173] "Starting controller" logger="deployment-controller" controller="deployment"
+I0201 11:28:24.856158       1 shared_informer.go:313] Waiting for caches to sync for deployment
+I0201 11:28:24.858961       1 controllermanager.go:765] "Started controller" controller="job-controller"
+I0201 11:28:24.860442       1 job_controller.go:243] "Starting job controller" logger="job-controller"
+I0201 11:28:24.860462       1 shared_informer.go:313] Waiting for caches to sync for job
+I0201 11:28:24.865466       1 controllermanager.go:765] "Started controller" controller="disruption-controller"
+I0201 11:28:24.865605       1 disruption.go:452] "Sending events to api server." logger="disruption-controller"
+I0201 11:28:24.865629       1 disruption.go:463] "Starting disruption controller" logger="disruption-controller"
+I0201 11:28:24.865633       1 shared_informer.go:313] Waiting for caches to sync for disruption
+I0201 11:28:24.867402       1 controllermanager.go:765] "Started controller" controller="serviceaccount-controller"
+I0201 11:28:24.867418       1 controllermanager.go:743] "Warning: skipping controller" controller="node-ipam-controller"
+I0201 11:28:24.867508       1 serviceaccounts_controller.go:114] "Starting service account controller" logger="serviceaccount-controller"
+I0201 11:28:24.867514       1 shared_informer.go:313] Waiting for caches to sync for service account
+I0201 11:28:24.868945       1 node_lifecycle_controller.go:432] "Controller will reconcile labels" logger="node-lifecycle-controller"
+I0201 11:28:24.868965       1 controllermanager.go:765] "Started controller" controller="node-lifecycle-controller"
+I0201 11:28:24.869465       1 node_lifecycle_controller.go:466] "Sending events to api server" logger="node-lifecycle-controller"
+I0201 11:28:24.869480       1 node_lifecycle_controller.go:477] "Starting node controller" logger="node-lifecycle-controller"
+I0201 11:28:24.869485       1 shared_informer.go:313] Waiting for caches to sync for taint
+I0201 11:28:24.870419       1 controllermanager.go:765] "Started controller" controller="persistentvolume-binder-controller"
+I0201 11:28:24.870514       1 pv_controller_base.go:308] "Starting persistent volume controller" logger="persistentvolume-binder-controller"
+I0201 11:28:24.870527       1 shared_informer.go:313] Waiting for caches to sync for persistent volume
+I0201 11:28:24.871684       1 controllermanager.go:765] "Started controller" controller="persistentvolume-expander-controller"
+I0201 11:28:24.871902       1 expand_controller.go:329] "Starting expand controller" logger="persistentvolume-expander-controller"
+I0201 11:28:24.871916       1 shared_informer.go:313] Waiting for caches to sync for expand
+I0201 11:28:24.873886       1 controllermanager.go:765] "Started controller" controller="ttl-after-finished-controller"
+I0201 11:28:24.874022       1 ttlafterfinished_controller.go:112] "Starting TTL after finished controller" logger="ttl-after-finished-controller"
+I0201 11:28:24.874029       1 shared_informer.go:313] Waiting for caches to sync for TTL after finished
+I0201 11:28:24.879581       1 controllermanager.go:765] "Started controller" controller="endpointslice-mirroring-controller"
+I0201 11:28:24.880623       1 endpointslicemirroring_controller.go:227] "Starting EndpointSliceMirroring controller" logger="endpointslice-mirroring-controller"
+I0201 11:28:24.880870       1 shared_informer.go:313] Waiting for caches to sync for endpoint_slice_mirroring
+I0201 11:28:24.882476       1 controllermanager.go:765] "Started controller" controller="replicationcontroller-controller"
+I0201 11:28:24.883035       1 replica_set.go:217] "Starting controller" logger="replicationcontroller-controller" name="replicationcontroller"
+I0201 11:28:24.883077       1 shared_informer.go:313] Waiting for caches to sync for ReplicationController
+I0201 11:28:24.885816       1 controllermanager.go:765] "Started controller" controller="root-ca-certificate-publisher-controller"
+I0201 11:28:24.886206       1 controllermanager.go:743] "Warning: skipping controller" controller="storage-version-migrator-controller"
+I0201 11:28:24.886263       1 controllermanager.go:717] "Controller is disabled by a feature gate" controller="storageversion-garbage-collector-controller" requiredFeatureGates=["APIServerIdentity","StorageVersionAPI"]
+I0201 11:28:24.886308       1 controllermanager.go:717] "Controller is disabled by a feature gate" controller="volumeattributesclass-protection-controller" requiredFeatureGates=["VolumeAttributesClass"]
+I0201 11:28:24.886197       1 publisher.go:107] "Starting root CA cert publisher controller" logger="root-ca-certificate-publisher-controller"
+I0201 11:28:24.886416       1 shared_informer.go:313] Waiting for caches to sync for crt configmap
+I0201 11:28:25.084485       1 controllermanager.go:765] "Started controller" controller="horizontal-pod-autoscaler-controller"
+I0201 11:28:25.084539       1 horizontal.go:201] "Starting HPA controller" logger="horizontal-pod-autoscaler-controller"
+I0201 11:28:25.084550       1 shared_informer.go:313] Waiting for caches to sync for HPA
+I0201 11:28:25.134293       1 controllermanager.go:765] "Started controller" controller="statefulset-controller"
+I0201 11:28:25.134378       1 stateful_set.go:166] "Starting stateful set controller" logger="statefulset-controller"
+I0201 11:28:25.134391       1 shared_informer.go:313] Waiting for caches to sync for stateful set
+I0201 11:28:25.184222       1 controllermanager.go:765] "Started controller" controller="bootstrap-signer-controller"
+I0201 11:28:25.184241       1 controllermanager.go:717] "Controller is disabled by a feature gate" controller="resourceclaim-controller" requiredFeatureGates=["DynamicResourceAllocation"]
+I0201 11:28:25.184286       1 shared_informer.go:313] Waiting for caches to sync for bootstrap_signer
+I0201 11:28:25.333727       1 controllermanager.go:765] "Started controller" controller="garbage-collector-controller"
+I0201 11:28:25.334072       1 garbagecollector.go:144] "Starting controller" logger="garbage-collector-controller" controller="garbagecollector"
+I0201 11:28:25.334095       1 shared_informer.go:313] Waiting for caches to sync for garbage collector
+I0201 11:28:25.334115       1 graph_builder.go:351] "Running" logger="garbage-collector-controller" component="GraphBuilder"
+I0201 11:28:25.384919       1 controllermanager.go:765] "Started controller" controller="daemonset-controller"
+I0201 11:28:25.384996       1 daemon_controller.go:294] "Starting daemon sets controller" logger="daemonset-controller"
+I0201 11:28:25.385010       1 shared_informer.go:313] Waiting for caches to sync for daemon sets
+I0201 11:28:25.484927       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-signing-controller" name="csrsigning-kubelet-serving"
+I0201 11:28:25.484982       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrsigning-kubelet-serving
+I0201 11:28:25.485024       1 dynamic_serving_content.go:135] "Starting controller" name="csr-controller::/run/config/pki/ca.crt::/run/config/pki/ca.key"
+I0201 11:28:25.485298       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-signing-controller" name="csrsigning-kubelet-client"
+I0201 11:28:25.485315       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrsigning-kubelet-client
+I0201 11:28:25.485342       1 dynamic_serving_content.go:135] "Starting controller" name="csr-controller::/run/config/pki/ca.crt::/run/config/pki/ca.key"
+I0201 11:28:25.485499       1 controllermanager.go:765] "Started controller" controller="certificatesigningrequest-signing-controller"
+I0201 11:28:25.485577       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-signing-controller" name="csrsigning-legacy-unknown"
+I0201 11:28:25.485587       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrsigning-legacy-unknown
+I0201 11:28:25.485641       1 certificate_controller.go:120] "Starting certificate controller" logger="certificatesigningrequest-signing-controller" name="csrsigning-kube-apiserver-client"
+I0201 11:28:25.485756       1 shared_informer.go:313] Waiting for caches to sync for certificate-csrsigning-kube-apiserver-client
+I0201 11:28:25.485798       1 dynamic_serving_content.go:135] "Starting controller" name="csr-controller::/run/config/pki/ca.crt::/run/config/pki/ca.key"
+I0201 11:28:25.485815       1 dynamic_serving_content.go:135] "Starting controller" name="csr-controller::/run/config/pki/ca.crt::/run/config/pki/ca.key"
+I0201 11:28:25.584538       1 controllermanager.go:765] "Started controller" controller="legacy-serviceaccount-token-cleaner-controller"
+I0201 11:28:25.584598       1 legacy_serviceaccount_token_cleaner.go:103] "Starting legacy service account token cleaner controller" logger="legacy-serviceaccount-token-cleaner-controller"
+I0201 11:28:25.584612       1 shared_informer.go:313] Waiting for caches to sync for legacy-service-account-token-cleaner
+I0201 11:28:25.634083       1 controllermanager.go:765] "Started controller" controller="endpointslice-controller"
+I0201 11:28:25.634225       1 endpointslice_controller.go:281] "Starting endpoint slice controller" logger="endpointslice-controller"
+I0201 11:28:25.634235       1 shared_informer.go:313] Waiting for caches to sync for endpoint_slice
+I0201 11:28:25.684028       1 controllermanager.go:765] "Started controller" controller="replicaset-controller"
+I0201 11:28:25.685859       1 replica_set.go:217] "Starting controller" logger="replicaset-controller" name="replicaset"
+I0201 11:28:25.685889       1 shared_informer.go:313] Waiting for caches to sync for ReplicaSet
+I0201 11:28:25.688494       1 shared_informer.go:313] Waiting for caches to sync for resource quota
+I0201 11:28:25.702718       1 actual_state_of_world.go:541] "Failed to update statusUpdateNeeded field in actual state of world" logger="persistentvolume-attach-detach-controller" err="Failed to set statusUpdateNeeded to needed true, because nodeName=\"docker-desktop\" does not exist"
+I0201 11:28:25.706773       1 shared_informer.go:320] Caches are synced for certificate-csrapproving
+I0201 11:28:25.710769       1 shared_informer.go:320] Caches are synced for TTL
+I0201 11:28:25.712211       1 shared_informer.go:313] Waiting for caches to sync for garbage collector
+I0201 11:28:25.714908       1 shared_informer.go:320] Caches are synced for ClusterRoleAggregator
+I0201 11:28:25.717810       1 shared_informer.go:320] Caches are synced for GC
+I0201 11:28:25.735447       1 shared_informer.go:320] Caches are synced for endpoint_slice
+I0201 11:28:25.735470       1 shared_informer.go:320] Caches are synced for stateful set
+I0201 11:28:25.735566       1 shared_informer.go:320] Caches are synced for garbage collector
+I0201 11:28:25.735576       1 garbagecollector.go:154] "Garbage collector: all resource monitors have synced" logger="garbage-collector-controller"
+I0201 11:28:25.735583       1 garbagecollector.go:157] "Proceeding to collect garbage" logger="garbage-collector-controller"
+I0201 11:28:25.741068       1 shared_informer.go:320] Caches are synced for validatingadmissionpolicy-status
+I0201 11:28:25.741084       1 shared_informer.go:320] Caches are synced for resource quota
+I0201 11:28:25.744185       1 shared_informer.go:320] Caches are synced for taint-eviction-controller
+I0201 11:28:25.747735       1 shared_informer.go:320] Caches are synced for PV protection
+I0201 11:28:25.752469       1 shared_informer.go:320] Caches are synced for attach detach
+I0201 11:28:25.753705       1 shared_informer.go:320] Caches are synced for PVC protection
+I0201 11:28:25.755824       1 shared_informer.go:320] Caches are synced for endpoint
+I0201 11:28:25.756880       1 shared_informer.go:320] Caches are synced for deployment
+I0201 11:28:25.760921       1 shared_informer.go:320] Caches are synced for job
+I0201 11:28:25.765199       1 shared_informer.go:320] Caches are synced for cronjob
+I0201 11:28:25.766961       1 shared_informer.go:320] Caches are synced for disruption
+I0201 11:28:25.768768       1 shared_informer.go:320] Caches are synced for service account
+I0201 11:28:25.770904       1 shared_informer.go:320] Caches are synced for persistent volume
+I0201 11:28:25.770968       1 shared_informer.go:320] Caches are synced for taint
+I0201 11:28:25.771026       1 node_lifecycle_controller.go:1234] "Initializing eviction metric for zone" logger="node-lifecycle-controller" zone=""
+I0201 11:28:25.771147       1 node_lifecycle_controller.go:886] "Missing timestamp for Node. Assuming now as a timestamp" logger="node-lifecycle-controller" node="docker-desktop"
+I0201 11:28:25.771198       1 node_lifecycle_controller.go:1080] "Controller detected that zone is now in new state" logger="node-lifecycle-controller" zone="" newState="Normal"
+I0201 11:28:25.773965       1 shared_informer.go:320] Caches are synced for expand
+I0201 11:28:25.774914       1 shared_informer.go:320] Caches are synced for TTL after finished
+I0201 11:28:25.780965       1 shared_informer.go:320] Caches are synced for endpoint_slice_mirroring
+I0201 11:28:25.781836       1 shared_informer.go:320] Caches are synced for ephemeral
+I0201 11:28:25.783805       1 shared_informer.go:320] Caches are synced for ReplicationController
+I0201 11:28:25.785433       1 shared_informer.go:320] Caches are synced for daemon sets
+I0201 11:28:25.785471       1 shared_informer.go:320] Caches are synced for certificate-csrsigning-kubelet-client
+I0201 11:28:25.785488       1 shared_informer.go:320] Caches are synced for HPA
+I0201 11:28:25.785532       1 shared_informer.go:320] Caches are synced for legacy-service-account-token-cleaner
+I0201 11:28:25.785581       1 shared_informer.go:320] Caches are synced for bootstrap_signer
+I0201 11:28:25.785623       1 shared_informer.go:320] Caches are synced for certificate-csrsigning-legacy-unknown
+I0201 11:28:25.785680       1 shared_informer.go:320] Caches are synced for certificate-csrsigning-kubelet-serving
+I0201 11:28:25.785874       1 shared_informer.go:320] Caches are synced for certificate-csrsigning-kube-apiserver-client
+I0201 11:28:25.786974       1 shared_informer.go:320] Caches are synced for crt configmap
+I0201 11:28:25.786996       1 shared_informer.go:320] Caches are synced for ReplicaSet
+I0201 11:28:25.787035       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="19.417µs"
+I0201 11:28:25.789550       1 shared_informer.go:320] Caches are synced for resource quota
+I0201 11:28:25.804957       1 shared_informer.go:320] Caches are synced for namespace
+I0201 11:28:25.812975       1 shared_informer.go:320] Caches are synced for garbage collector
+I0201 11:28:26.190754       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-668d6bf9bc" duration="403.718209ms"
+I0201 11:28:26.190860       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-668d6bf9bc" duration="47.959µs"
+I0201 11:28:59.240167       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-668d6bf9bc" duration="6.643417ms"
+I0201 11:28:59.240243       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-668d6bf9bc" duration="38.958µs"
+I0201 11:29:01.393675       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-668d6bf9bc" duration="7.601917ms"
+I0201 11:29:01.393746       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-668d6bf9bc" duration="33.708µs"
+I0201 11:39:14.674315       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="10.75µs"
+I0201 11:53:12.444023       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="sonobuoy"
+I0201 11:53:43.983297       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-668d6bf9bc" duration="129.833µs"
+I0201 11:54:17.619692       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="sonobuoy"
+I0201 11:54:21.583716       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="40.236792ms"
+I0201 11:54:21.589198       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="5.451125ms"
+I0201 11:54:21.598494       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="9.268083ms"
+I0201 11:54:21.598541       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="25.667µs"
+I0201 11:54:21.605244       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="29.875µs"
+I0201 11:54:24.066804       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="5.366208ms"
+I0201 11:54:24.066850       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="19.75µs"
+I0201 11:54:24.074510       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="3.058958ms"
+I0201 11:54:24.074545       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="15.333µs"
+I0201 11:54:24.080466       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="2.627625ms"
+I0201 11:54:24.080506       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="17.167µs"
+E0201 11:58:01.437810       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 11:58:01.494406       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 11:58:01.569028       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 11:58:01.635920       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 11:58:01.722120       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 11:58:01.853560       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 11:58:02.070091       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 11:58:02.452045       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 11:58:03.162331       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 11:58:04.509157       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+I0201 11:58:12.061148       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="sonobuoy"
+I0201 12:04:39.038295       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="72.208µs"
+I0201 12:04:39.038432       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-668d6bf9bc" duration="50.75µs"
+I0201 12:08:53.940019       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="sonobuoy"
+I0201 12:10:10.762694       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="sonobuoy"
+I0201 12:11:30.233509       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="sonobuoy"
+I0201 12:12:52.694146       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="sonobuoy"
+I0201 12:13:37.340491       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="60.083µs"
+I0201 12:13:37.340611       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="kube-system/coredns-668d6bf9bc" duration="49.166µs"
+E0201 12:18:33.802822       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:33.855107       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:33.954435       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:34.024202       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:34.109333       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:34.236232       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:34.445191       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:34.824578       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:35.528629       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:36.869655       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:39.492299       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:44.670310       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:18:54.971357       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+I0201 12:19:20.511867       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="sonobuoy"
+I0201 12:21:19.870161       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="31.601084ms"
+I0201 12:21:19.879381       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="9.179916ms"
+I0201 12:21:19.894138       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="14.71775ms"
+I0201 12:21:19.894227       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="53.167µs"
+I0201 12:21:19.896694       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="28.459µs"
+I0201 12:21:19.901486       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="96.041µs"
+I0201 12:21:19.905105       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="21.917µs"
+I0201 12:21:19.909310       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="24.25µs"
+I0201 12:21:19.913103       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="22.042µs"
+I0201 12:21:19.917655       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="24.959µs"
+I0201 12:21:19.921418       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="40.541µs"
+I0201 12:21:19.925773       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="24.292µs"
+I0201 12:21:21.206502       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="37.489416ms"
+I0201 12:21:21.206680       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="48.5µs"
+I0201 12:21:21.234994       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="7.743833ms"
+I0201 12:21:21.235247       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="59.875µs"
+I0201 12:21:21.253104       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="9.687959ms"
+I0201 12:21:21.253168       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="35.292µs"
+I0201 12:21:21.263326       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="6.960625ms"
+I0201 12:21:21.263392       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="35.25µs"
+I0201 12:21:21.276514       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="6.197375ms"
+I0201 12:21:21.276631       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="51.291µs"
+I0201 12:21:21.290260       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="4.183584ms"
+I0201 12:21:21.290369       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="52.667µs"
+I0201 12:21:21.300267       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="3.048833ms"
+I0201 12:21:21.300356       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="52.458µs"
+I0201 12:21:22.335443       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="7.553917ms"
+I0201 12:21:22.335752       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="49.25µs"
+I0201 12:21:22.352643       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="7.980375ms"
+I0201 12:21:22.352707       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="36.541µs"
+I0201 12:21:22.370426       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="11.732875ms"
+I0201 12:21:22.370518       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="48.958µs"
+E0201 12:21:30.960402       1 garbagecollector.go:360] "Unhandled Error" err="error syncing item &garbagecollector.node{identity:garbagecollector.objectReference{OwnerReference:v1.OwnerReference{APIVersion:\"apps/v1\", Kind:\"ReplicaSet\", Name:\"test-deployment-0-5b677c889d\", UID:\"1642fa20-3b2d-4798-9461-4e9ce843395c\", Controller:(*bool)(nil), BlockOwnerDeletion:(*bool)(nil)}, Namespace:\"test-p2k8mg-1\"}, dependentsLock:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:1}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}, dependents:map[*garbagecollector.node]struct {}{(*garbagecollector.node)(0x4000750690):struct {}{}, (*garbagecollector.node)(0x4000c06780):struct {}{}, (*garbagecollector.node)(0x4000c06960):struct {}{}, (*garbagecollector.node)(0x4000c072c0):struct {}{}, (*garbagecollector.node)(0x4000c07c20):struct {}{}, (*garbagecollector.node)(0x4000e8e870):struct {}{}, (*garbagecollector.node)(0x4000e8ed20):struct {}{}, (*garbagecollector.node)(0x400229cb40):struct {}{}, (*garbagecollector.node)(0x400229ce10):struct {}{}, (*garbagecollector.node)(0x400229d1d0):struct {}{}}, deletingDependents:false, deletingDependentsLock:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}, beingDeleted:false, beingDeletedLock:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}, virtual:false, virtualLock:sync.RWMutex{w:sync.Mutex{state:0, sema:0x0}, writerSem:0x0, readerSem:0x0, readerCount:atomic.Int32{_:atomic.noCopy{}, v:0}, readerWait:atomic.Int32{_:atomic.noCopy{}, v:0}}, owners:[]v1.OwnerReference{v1.OwnerReference{APIVersion:\"apps/v1\", Kind:\"Deployment\", Name:\"test-deployment-0\", UID:\"411234a0-dc7c-4c18-ae4f-8b4f33a122b8\", Controller:(*bool)(0x40031481a7), BlockOwnerDeletion:(*bool)(0x40031481a8)}}}: replicasets.apps \"test-deployment-0-5b677c889d\" not found" logger="UnhandledError"
+I0201 12:21:30.960448       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-p2k8mg-1/test-deployment-0-5b677c889d" duration="4.208µs"
+I0201 12:21:41.215545       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="test-p2k8mg-1"
+I0201 12:21:45.896112       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="4.542µs"
+I0201 12:21:56.210272       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="cluster-loader"
+E0201 12:23:14.530283       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:23:14.582619       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:23:14.639059       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:23:14.706928       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:23:14.795776       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:23:14.922588       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:23:15.131025       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:23:15.510806       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:23:16.217888       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+E0201 12:23:17.550828       1 namespace_controller.go:164] "Unhandled Error" err="deletion of namespace sonobuoy failed: unexpected items still remain in namespace: sonobuoy for gvr: /v1, Resource=pods" logger="UnhandledError"
+I0201 12:23:25.170494       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="sonobuoy"
+I0201 12:23:26.838198       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="29.883083ms"
+I0201 12:23:26.844117       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="5.870791ms"
+I0201 12:23:26.844184       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="30.958µs"
+I0201 12:23:26.849926       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="26.375µs"
+I0201 12:23:26.861126       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="47.625µs"
+I0201 12:23:28.693150       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="12.631375ms"
+I0201 12:23:28.697287       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="55.083µs"
+I0201 12:23:28.751768       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="9.134375ms"
+I0201 12:23:28.751870       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="45.916µs"
+I0201 12:23:28.764009       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="5.262125ms"
+I0201 12:23:28.764104       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="38.25µs"
+I0201 12:23:37.111408       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="34.93875ms"
+I0201 12:23:37.121853       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="10.415125ms"
+I0201 12:23:37.121918       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="31.5µs"
+I0201 12:23:37.124205       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="24.5µs"
+I0201 12:23:37.129112       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="82.459µs"
+I0201 12:23:37.133274       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="25.25µs"
+I0201 12:23:37.137244       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="63.083µs"
+I0201 12:23:37.140973       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="23.167µs"
+I0201 12:23:37.144998       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="24.875µs"
+I0201 12:23:37.149300       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="42.917µs"
+I0201 12:23:37.152357       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="36.666µs"
+I0201 12:23:37.156396       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="40.375µs"
+I0201 12:23:38.651328       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="15.334917ms"
+I0201 12:23:38.651479       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="127.208µs"
+I0201 12:23:38.711374       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="16.336875ms"
+I0201 12:23:38.714370       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="74.042µs"
+I0201 12:23:39.849655       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="11.50825ms"
+I0201 12:23:39.849735       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="46.375µs"
+I0201 12:23:39.865538       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="13.507375ms"
+I0201 12:23:39.865624       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="43.542µs"
+I0201 12:23:39.880894       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="4.815708ms"
+I0201 12:23:39.881019       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="41.459µs"
+I0201 12:23:39.897019       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="6.153417ms"
+I0201 12:23:39.897342       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="107.417µs"
+I0201 12:23:39.965582       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="11.4075ms"
+I0201 12:23:39.965688       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="60.209µs"
+I0201 12:23:39.988734       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="13.623875ms"
+I0201 12:23:39.989058       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="275.417µs"
+I0201 12:23:40.038790       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="14.656542ms"
+I0201 12:23:40.038903       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="45.375µs"
+I0201 12:23:40.086935       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="41.86625ms"
+I0201 12:23:40.087015       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="48.625µs"
+I0201 12:23:48.147185       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="test-suyh9f-1/test-deployment-0-5b677c889d" duration="8.75µs"
+I0201 12:23:58.884374       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="test-suyh9f-1"
+I0201 12:24:03.134650       1 replica_set.go:679] "Finished syncing" logger="replicaset-controller" kind="ReplicaSet" key="cluster-loader/exec-pod-57958cfc45" duration="7.25µs"
+I0201 12:24:13.397793       1 namespace_controller.go:187] "Namespace has been deleted" logger="namespace-controller" namespace="cluster-loader"
